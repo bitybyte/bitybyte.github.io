@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Sacudiendo el mundo de los algoritmos
+author: Pablo Estrada
+author_site: http://iampablo.me
 language: spanish
 tags:
   - español
@@ -14,8 +16,8 @@ Nota: Antes de continuar, es importante que tengan una idea de qué es la [Notac
 ##¿El iso- qué de Grafos?
 Isomorfismo de Grafos es un concepto de la [Teoría de Grafos](https://en.wikipedia.org/wiki/Graph_theory). Dados dos grafos, queremos saber si esos dos grafos son isomórficos - o sea, si en realidad representan la misma "estructura". Por ejemplo, en la Figura 1 podemos ver dos grafos ordenados de distinta forma, pero si observamos de cerca, podemos ver que su estructura es la misma.
 
-<center>![Grafo A](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Graph_isomorphism_a.svg/100px-Graph_isomorphism_a.svg.png) ![Grafo B](https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Graph_isomorphism_b.svg/210px-Graph_isomorphism_b.svg.png)
-
+<center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Graph_isomorphism_a.svg/100px-Graph_isomorphism_a.svg.png"></img><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Graph_isomorphism_b.svg/210px-Graph_isomorphism_b.svg.png"></img>
+<br>
 Figura 1. Grafo A y Grafo B. Estos dos grafos son isomórficos.</center>
 
 ¿Se nota? Observen que el nodo Azul está conectado con los nodos Naranja, Rojo y Verde en ambos grafos; luego, el nodo Morado está conectado con los nodos Amarillo, Rosa y Azul claro - también en ambos grafos. Observen que con todos los nodos, el resultado es siempre el mismo. Tómense un minuto para ver que es cierto. Entonces, buscamos un algoritmo *eficiente* que recibe dos grafos, y puede determinar si son isomórficos o no.
@@ -43,8 +45,8 @@ Una cuestión importante de NP es que hasta ahora, nadie ha demostrado que los p
 
 ¿Se dan cuenta de lo que esto significa? Es decir que si alguien logra resolver **uno solo** de los problemas NP en tiempo polinomial, entonces **todos** los problemas NP en realidad son problemas **P**, y NP sería igual a P (NP = P). Y viceversa, si alguien demostrara que los problemas NP son *imposibles* de resolver en tiempo polinomial, entonces el mundo podría descansar y aceptar que los problemas NP-Completos en realidad no son fáciles de resolver. En la Figura 2 se ven los diagramas de Venn para cada uno de estos casos.
 
-<center>![P vs NP](http://pabloem.github.io/images/NPvsP.png)
-
+<center><img src="http://pabloem.github.io/images/NPvsP.png"></img>
+<br>
 Figura 2. Los conjuntos P y NP. En (a), los conjuntos son diferentes (y los problemas en NP no pueden ser resueltos en tiempo polinomial). En (b) son iguales. Éste es uno de los problemas del milenio. </center>
 
 Por esto es que el problema de P vs NP es *tan* importante. Y por eso el resultado del profesor László Babai es tan interesante. Ahora vamos a hablar de Isomorfismo de Grafos.

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Hay de Math.random() a Math.random()
+author: Pablo Estrada
+author_site: http://iampablo.me
 language: spanish
 tags:
   - español
@@ -18,8 +20,9 @@ En este post vamos a estudiar los Generadores de Números Pseudoaleatorios (tamb
 Pero entonces, ¿porqué era tan malo el generador de Javascript? y en general, ¿qué determina que un Generador de Números Pseudoaleatorios sea bueno?
 
 ## ¿Qué es aleatorio y cómo lo generamos?
-*<small><p align="right">Cualquiera que piense en métodos aritméticos para generar números aleatorios está, por supuesto, en pecado.
-— JOHN VON NEUMANN (1951)</p></small>*
+*<small>Cualquiera que piense en métodos aritméticos para generar números aleatorios está, por supuesto, en pecado.
+— JOHN VON NEUMANN (1951)</small>*
+{: align="right"}
 
 En la ciencia de la computación y las matemáticas es común que se necesite una 'fuente de aleatoriedad'. Por ejemplo, para criptografía, juegos y apuestas, [simulaciones de Montecarlo](https://es.wikipedia.org/wiki/M%C3%A9todo_de_Montecarlo), o incluso para cosas sencillas como el [algoritmo QuickSort](https://es.wikipedia.org/wiki/Quicksort) se necesita generar múchos números que sean aleatorios, y que sean generables rápidamente. Desafortunadamente, generar números veraderamente aleatorios no es sencillo. Existen aplicaciones donde es muy importante que los números sean verdaderamente aleatorios, como la criptografía o las apuestas. Para estas aplicaciones existen generadores basados en eventos cuánticos o en sistemas caóticos (e.g. ruido atmosférico, dispositivos mecánicos, etc.). Estos generadores generan números *verdaderamente* aleatorios. Posteriormente escribiré un post sobre ellos.
 
@@ -50,7 +53,7 @@ function random(){
 
 La secuencia de números que puede ser generada con este PRNG es la siguiente:
 
-<center> ![0,3,2,13,4,7,6,18,11,10,5,12,15,14,9](http://pabloem.github.io/images/prng_1.png)
+<center> <img src="http://pabloem.github.io/images/prng_1.png"></img><br>
 Figura 1. Números generados por un PRNG congruencial lineal. </center>
 
 Como pueden observar, la secuencia se repite cada 16 números generados. Tómense un minuto para ver cómo se genera cada uno de los números. También, como pueden ver, la secuencia parece ser bastante aleatoria (aunque en realidad no lo es).
@@ -131,8 +134,7 @@ Y por eso es que en Betable empezaron a encontrar problemas a tan solo un mes.
 
 Para darle una forma visual a la calidad de los PRNGs de en Javascript, observen cómo en la figura 2 se pueden ver 'imágenes de ruido' generadas con los PRNGs de (1) Safari y de (2) V8. Es bastante notorio que el PRNG de Safari genera una imagen que *se ve* más aleatoria.
 
-<center>![Safari Aleatorio](https://cdn-images-1.medium.com/max/600/1*G2aXFFqqUane0d1Maw-fPw.png) ![V8 Aleatorio](https://cdn-images-1.medium.com/max/600/1*dpaeqFkE-kqW9SR6UOTZBw.png)
-
+<center><img src="https://cdn-images-1.medium.com/max/600/1*G2aXFFqqUane0d1Maw-fPw.png"></img><img src="https://cdn-images-1.medium.com/max/600/1*dpaeqFkE-kqW9SR6UOTZBw.png"></img><br>
 Figura 2. Ruido generado por (1) Safari y (2) V8 (Chrome) - por M. Malone de Betable.
 </center>
 

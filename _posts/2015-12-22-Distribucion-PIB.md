@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Población y producción en el territorio Mexicano
+author: Pablo Estrada
+author_site: http://iampablo.me
 language: spanish
 tags:
   - español

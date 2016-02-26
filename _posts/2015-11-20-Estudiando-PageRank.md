@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Hablemos de PageRank
+author: Pablo Estrada
+author_site: http://iampablo.me
 language: spanish
 tags:
     - español
@@ -12,8 +14,7 @@ Recientemente, investigadores de la Universidad de Fribourg en Suiza han estado 
 [un nuevo artículo](http://arxiv.org/abs/1509.01476) donde estudian el profundamente el algoritmo
 de PageRank. Particularmente, este estudio se centra en el comportamiento de PageRank caundo es
 utilizado para analizar redes (también conocidas como grafos) que crecen con el tiempo. El artículo fue
-mencionado en la lista ['Emerging Technology from the ArXiv']
-(http://www.technologyreview.com/view/541416/other-interesting-arxiv-papers-week-ending-september-19-2015/),
+mencionado en la lista ['Emerging Technology from the ArXiv'](http://www.technologyreview.com/view/541416/other-interesting-arxiv-papers-week-ending-september-19-2015/),
 de MIT Technology Review: Una lista semanal donde se seleccionan artículos novedosos e interesantes. Acabo de leer
 el artículo (en parte porque tengo que presentarlo en la escuela:P) y decidí escribir un pequeño post al respecto,
 dado que PageRank es un algoritmo famoso e importante.
@@ -36,7 +37,7 @@ cuatro sitios web que tienen ligas entre ellos.
 
 <center>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Directed_graph.svg/2000px-Directed_graph.svg.png" width="300px">
-
+<br>
 <i>Figura 1. Una red o grafo simple con cuatro nodos.</i></center>
 
 ### ¿Porqué fue importante?
@@ -85,7 +86,7 @@ mientras que la probabilidad de estar en el nodo número 4 es de 0.25 (o 75% y 2
 la probabilidad de estar en cualqueir otro nodo es de cero.
 
 <center><img src="http://pabloem.github.io/images/pagerank_tree.png"></img>
-
+<br>
 <i>Figura 2. Árbol de probabilidades en una caminata aleatoria.</i></center>
 
 Pero esto sólo es el principio. PageRank considera una caminata aleatoria **infinita**. Si observamos la Figura 1, podemos
@@ -109,7 +110,7 @@ donde se definen las probailidades de moverse de un nodo al otro en un camino al
 la matriz definida por el grafo de la Figura 1 (sin factor de amortiguamento) se ve así:
 
 <center><img src="http://pabloem.github.io/images/matrix_simple.png"></img>
-
+<br>
 <i>Figura 3. Matriz del Proceso de Markov para la caminata aleatoria en el grafo de la Figura 1.</i></center>
 
 Como ven, en la matriz A están las probabilidades de moverse de un nodo a otro. La probabilidad de moverse del
@@ -120,7 +121,7 @@ representa posiciones iniciales en el grafo, representa la probabilidad de estar
 plazo (¿les suena? Justo como PageRank); es decir:
 
 <center><img src="http://pabloem.github.io/images/stat_dist.png"></img>
-
+<br>
 <i>Figura 4. Ecuación de la distribución estacionaria.</i></center>
 
 Como ya habíamos mencionado, cuando no hay factor de amortiguamiento, todas las caminatas aleatorias terminan en el
@@ -130,7 +131,7 @@ vector `[0,1,0,0]`. (Nota: Para eso pueden usar www.wolframalpha.com!).
 Y entonces, si agregamos el factor de amortiguamiento, la matriz que resulta es la siguiente:
 
 <center><img src="http://pabloem.github.io/images/matrix_pagerank.png"></img>
-
+<br>
 <i>Figura 5. Matriz completa de pagerank para el grafo de la Figura 1.</i></center>
 
 ¿De dónde salieron tantos decimales? Estos decimales resultan de agregar el factor de amortiguamiento de 0.15. Recordemos

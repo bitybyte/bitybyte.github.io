@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Las Tortillas nos Unen
+author: Pablo Estrada
+author_site: http://iampablo.me
 language: spanish
 tags:
   - español

@@ -1,13 +1,17 @@
 ---
 layout: page
-title: About
+title: Sobre el blog
 permalink: /about/
 ---
 
-Hey! This is [Pablo](http://iampablo.me)! - and this is my blog. I post here about data analysis, computer science,
-Mexico, and all things that I might find interesting and want to share with others. All suggestions are welcome,
-and f you want to collaborate on anything, please contact me.
+A falta de blogs que exploren la ingeniería de software y la ciencia de la computación juntas, hemos empezado este blog. El blog está enfocado a estudiantes y profesionales que disfruten de aprender y de entender nuevas cosas.
 
-### Contact me
+### Escritores y editores
 
-[mail@iampablo.me](mailto:mail@iampablo.me)
+[Pablo Estrada](http://iampablo.me) - Editor y escritor
+
+* Pablo se encuentra estudiando una maestría en cómputo científico en Corea del Sur. Chilango de corazón, le encantan las quesadillas sin queso, y las grandes ciudades. Tiene interés en análisis de datos, algoritmos, probabilidad y la enseñanza.
+
+### Para contribuir
+
+Todas las contribuciones son bienvenidas. Si tienes algo escrito que quieras compartir, o si deseas escribir sobre algún tema, ponte en contacto con cualquiera de nuestros editores!

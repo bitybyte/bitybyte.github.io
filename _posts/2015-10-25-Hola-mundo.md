@@ -1,6 +1,8 @@
 ---
 layout: post
-title: Hola Mundo
+title: Hola Mundox
+author: Pablo Estrada
+author_site: http://iampablo.me
 language: spanish
 tags:
   - español
