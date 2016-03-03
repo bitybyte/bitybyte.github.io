@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Programando una red neuronal simple
-language: spanish
 author: Pablo Estrada
 author_site: http://iampablo.me
 tags:
