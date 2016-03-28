@@ -56,6 +56,8 @@ Entonces, un ejemplo del resultado nuestra función sería `get_probabilities("a
 |c|0.2|
 |Fin|0.1|
 
+No se saquen de onda. El caracter final (o marcador final) es importante a la hora de descomprimir el archivo.
+
 #### Obteniendo el árbol de codificación
 El siguiente paso es obtener el árbol de codificación. Éste es *el paso de la muerte* del algoritmo de Huffman, y consiste en los siguientes pasos:
 
