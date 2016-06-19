@@ -12,6 +12,8 @@ tags:
 ---
 Hoy vamos a platicar sobre cómo hacer un pequeño programa para comprimir datos de un archivo de texto. Nuestro programa va a funcional con un algoritmo de compresión bastante famoso: El algoritmo de Huffman. Con él vamos a utilizar **menos bits** para guardar la misma cantidad de información.
 
+*Nota: En este post estudiamos codificación con el algoritmo de Huffman. En [un post posterior](http://bitybyte.github.io/Descomprimiendo-datos-Huffman/) estudiamos* **decodificación**. *Chécalo!*
+
 La idea es muy simple: En un archivo normal, todos los símbolos son de un byte (8 bits). En nuestro archivo comprimido, los símbolos que se utilizan mucho pueden ser codificados *con menos bits*, y los símbolos que casi no se usan pueden ser codificados *con más bits*, y así, el promedio de *bits por símbolo* sería *menor a 8*.
 
 ## Historia
