@@ -14,7 +14,7 @@ Algunos algoritmos de la ciencia de la computación que son importantísimos son
 
 Resulta que las bases de la criptografía han existido desde hace siglos en la teoría de números. ¿Cómo es que se pasó de un estudio de los números a la protección de información?
 
-Vamos a dar un paso atrás y averigüar cómo funciona un algoritmo de encripción que es utilizado en la vida real. Y eso es lo que vamos a hacer el día de hoy.
+Vamos a dar un paso atrás y averiguar cómo funciona un algoritmo de encripción que es utilizado en la vida real. Y eso es lo que vamos a hacer el día de hoy.
 
 En este post vamos a estudiar el algoritmo RSA, que fue desarrollado por tres investigadores en MIT en la segunda mitad de los 70s.
 
