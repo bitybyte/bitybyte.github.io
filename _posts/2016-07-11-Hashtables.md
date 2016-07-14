@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hash Tables - lo que no te enseñan en la escuela
+title: Asi funcionan los Hash Tables
 author: Ricardo Zavaleta
 author_site: https://github.com/rzavalet
 tags:
