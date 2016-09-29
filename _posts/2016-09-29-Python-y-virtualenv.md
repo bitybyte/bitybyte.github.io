@@ -15,6 +15,8 @@ de desarrollo en Python llamada `virtualenv`; que te permite crear entornos
 `virtualenv` es que te permite tener varias instalaciones funcionales de
 Python en una misma máquina.
 
+![Python Virtualenv]( {{ site.url }}/images/python-virtualenv.jpg )
+
 ¿Y qué? Pues eso te permite trabajar con diferentes versiones de librerías
 y paquetes (por ejemplo, versiones de desarrollo posteriores a los paquetes
 públicos en PyPi).
